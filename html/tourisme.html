@@ -1,143 +1,613 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>MaurInvest</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="../js/carouFredSel.js"></script>
-  <title>Le tourisme</title>
-    <link rel="stylesheet" href="../css/home.css">
-   </head> 
-   <body>
-    <div class="container-fluid">
-    <div class="home">
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <a href="#" class="navbar-brand"><img id="img" src="../IMG_1579378101722.png">DSMK</a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#my">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="my">
-         <ul class="navbar-nav">
-            <li class="nav-item"> <a class="nav-link" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="peche.html">La peche</a></li> 
-            <li class="nav-item active"><a class="nav-link"  href="tourisme.html">Le tourisme</a></li>
-            <li class="nav-item"><a  class="nav-link" href="metaux.html">Les Minéraux</a></li>
-            <li class="nav-item"><a  class="nav-link" href="energie.html">L'agriculture</a></li>
-          </ul>
-        </div>
-      </nav>  
-    
-    </div>
-    <section >
-        <div class="container-fluid">
+    <!-- Favicons -->
+    <link href="../img/favicon.png" rel="icon">
+    <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Nivo Slider Theme -->
+    <link href="../css/nivo-slider-theme.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Responsive Stylesheet File -->
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+<div id="preloader"></div>
+
+<header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+        <div class="container">
             <div class="row">
-                <div class="col-3" >
-                    <h4> code d'invesstissement:</h4>
-                    <div class="jumbotron">
-                        <ol>
-                            <li><h4>Garanties et protection de la propriété</h4><p>L'entreprise est garantie contre toute mesure de nationalisation, d'expropriation ou de
-                                réquisition sur toute l'étendue du territoire national.</p></li>
-                            <li><h4>Garantie de stabilité des conditions</h4><p>L'Etat garantit aux entreprises la stabilité des conditions juridiques, fiscales et
-                                douanières accordées durant une période de vingt (20) ans à partir de la date
-                                d'attribution du certificat d'investissement.</p></li>
-                            <li><h4>Garantie de transferts des capitaux</h4><p>La liberté pour l'entreprise de transférer sans délai, après paiement des droits et taxes
-                                mauritaniens, les revenus ou produits de toute nature, résultant de son exploitation, de
-                                toute cession d'éléments d'actifs ou de sa liquidation, est garantie pour la part revenant
-                                aux investisseurs étrangers conformément aux textes en vigueur.</p></li>
-                            <li><h4>Garantie de transfert des rémunérations</h4><p>La liberté de transférer tout ou partie de sa rémunération salariale selon la
-                                réglementation des changes en vigueur, après paiement des droits et taxes, quel qu'en
-                                soit la nature juridique et le montant exprimé en monnaie locale ou en devises.</p></li>
-                            <li><h4>Emploi du personnel expatrié</h4><p>L'entreprise peut employer des agents expatriés à des postes clés jusqu'à 10% du
-                                personnel d'encadrement, conformément à la législation du travail en vigueur.</p></li>
-                            <li><h4>Avantages douaniers</h4><ul>Les entreprises établies dans les zones franches bénéficient:
-                                <li> de la franchise totale de droits et taxes douanier à l'importation des biens
-                                    d'équipement, matériels, véhicules utilitaires destinés à la production (la liste des
-                                    biens éligibles est fixée par Arrêté du Ministre des Finances).</li>
-                                <li> de l'exonération de droits et taxes de douanes à l'exportation.</li></ul></li>
-                            <li><h4>Champ d'application et seuils d'éligibilité</h4><ul>Peuvent faire l'objet de Conventions d'Etablissement, les investissements importants
-                                dans les domaines de:
-                                <li>l'activité de l'agriculture à l'exception de l'acquisition de terrains;</li>
-                                <li>l'industrie à terre des produits de la pêche à l'exception de la farine de poissons;</li>
-                                <li>l'activité de développement de la pêche artisanale et côtière;</li>
-                                <li>Unités industrielles et manufacturières;</li>
-                                <li>Hôtellerie et tourisme hors de Nouakchott;</li>
-                            </ul></li>
+                <div class="col-md-12 col-sm-12">
 
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="col-6">
-               <ul class="j-slider" id="j-slider" >
-            <li> 
-                <img class="rounded" src="../img/home/1 (1).jpg">
-            </li>
-           <li>
-             <img class="rounded" src="../img/home/1 (2).jpg">
-           <li>
-           <li>
-             <img class="rounded" src="../img/home/1 (3).jpg">
-           </li>
-           <li>
-            <img class="rounded" src="../img/home/1 (4).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (5).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (7).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (8).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (9).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (10).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (11).jpg">
-          </li>
-          <li>
-            <img class="rounded" src="../img/home/1 (12).jpg">
-          </li>
-        </ul>
-
-      <div class="jumbotron text-center">
-        <h3> Tourisme:</h3>
-        <p class="text-center">
- 
-Le tourisme en Mauritanie peut être une expérience unique pour les investisseurs, ainsi que pour ceux qui cherchent à découvrir les secrets du désert mauritanien dans ses villes anciennes, qui constituaient dans le passé une étape majeure sur la route des caravanes médiévales.
-
-La Mauritanie, qui est le point de rencontre du monde arabe et de l'Afrique subsaharienne, se distingue par son patrimoine culturel exceptionnel et la diversité des paysages; son vaste désert qui offre de grandes opportunités pour les aventures sportives, la chasse et la terre, son terrain montagneux, ses plages pittoresques, parcs et réserves naturelles, ainsi que les vallées et les oasis disséminées dans le désert mauritanien La diversité ethnique du pays est également un facteur de richesse, car les valeurs arabes authentiques embrassent les traditions africaines dans une harmonie unique.
-
-
-
-On peut dire que le pays possède d'énormes qualifications touristiques qui offrent des opportunités d'investissement prometteuses telles que: les villes archéologiques classées au patrimoine humain par l'UNESCO (Chinguetti, Adan, Chet et Latta), qui assistent à des festivals annuels qui sont devenus un pèlerinage pour un grand nombre de touristes, et des oasis de palmiers dans Les États d'Adrar, de Takant et d'Adaba, en plus d'une côte atlantique propre, se distinguent par leur climat agréable, leurs paysages pittoresques et leurs réserves naturelles (Cap-Vert, bassin d'Argin et Diaoling), et le bassin d'argin comprend un archipel d'îles sur la côte atlantique (102 îles) sur une superficie de 12 mille kilomètres carrés, et c'est un lieu de prédilection pour des millions d'oiseaux et d'animaux migrateurs Bleu marine
-Il a été classé par l'UNESCO en 1989 comme patrimoine mondial.
-
-        </p>
-      </div>
-                </div>
-                    <div class="col-3">
-                        <h3>Les annonces:</h3>
-                        <div class="jumbotron text-center">
-                            <p class="text-center">
-
-                            </p>
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- Brand -->
+                            <a class="navbar-brand page-scroll sticky-logo" >
+                                <h1><span>Maur</span>Invest</h1>
+                                <!-- Uncomment below if you prefer to use an image logo -->
+                                <!-- <img src="img/logo.png" alt="" title=""> -->
+                            </a>
                         </div>
+                        <div style="float: right;margin-left: 10%">
+                            <button class="b"><a href="index.html" class="a">FR</a> </button>
+                            <button class="b"><a href="الرئيسية.html" class="a">AR</a></button>
+                            <button class="b"><a href="home.html" class="a">ENG</a></button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li >
+                                    <a class="page-scroll" href="index.html">Acceuil</a>
+
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">La peche<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a  href="peche.html">les informations</a></li>
+                                        <li><a href="s-p.html" >les statistiques</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">le tourisme<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li ><a href="tourisme.html">les informations</a></li>
+                                        <li><a href="s-t.html">les statistiques</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">l'agriculture<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a  href="agri.html">les informations</a></li>
+                                        <li><a href="s-a.html" >les statistiques</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">les mines<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li> <a href="mines.html">les informations</a></li>
+                                        <li><a href="s-m.html" >les statistiques</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="page-scroll" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- navbar-collapse -->
+                    </nav>
+                    <!-- END: Navigation -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-area end -->
+</header>
+<!-- header end -->
 
 
+
+<!-- Start Slider Area -->
+<div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+        <div id="ensign-nivoslider" class="slides" ">
+            <img src="../img/tourisme/Banc%20d'argin/1%20(11).jpg" alt="" title="#slider-direction-1" />
+            <img src="../img/tourisme/Terjit/1%20(6).jpg" alt="" title="#slider-direction-2" />
+            <img src="../img/tourisme/Chinguiti/1%20(3).jpg" alt="" title="#slider-direction-3" />
+            <img src="../img/tourisme/Ain%20sahra/1%20(2).jpg" alt="" title="#slider-direction-4" />
+        </div>
+
+        <!-- direction 1 -->
+        <div id="slider-direction-1" class="slider-direction slider-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="slider-content">
+                            <!-- layer 1 -->
+                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h2 class="title1">La meilleure information d'investissement</h2>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-1-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h1 class="title2">Nous sommes là pour vous aider à démarrer votre investissement</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    </section>
-      <script src="../js/js2.js"></script>
-   </body>
-</html>  
+        </div>
+
+        <!-- direction 2 -->
+        <div id="slider-direction-2" class="slider-direction slider-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="slider-content">
+                            <!-- layer 1 -->
+                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h2 class="title1">La meilleure information d'investissement</h2>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-1-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h1 class="title2">Nous sommes là pour vous aider à démarrer votre investissement</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- direction 3 -->
+        <div id="slider-direction-3" class="slider-direction slider-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="slider-content">
+                            <!-- layer 1 -->
+                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h2 class="title1">La meilleure information d'investissement</h2>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-1-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h1 class="title2">Nous sommes là pour vous aider à démarrer votre investissement</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- direction 4 -->
+        <div id="slider-direction-4" class="slider-direction slider-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="slider-content">
+                            <!-- layer 1 -->
+                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h2 class="title1">La meilleure information d'investissement</h2>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-1-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                <h1 class="title2">Nous sommes là pour vous aider à démarrer votre investissement</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End Slider Area -->
+
+<div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                    <h2>Tourisme en Mauritanie</h2>
+                    <p>
+                        <b>Le tourisme en Mauritanie peut être une expérience unique pour <strong>les investisseurs</strong>,
+                            ainsi que pour ceux qui cherchent à découvrir les secrets du désert mauritanien dans ses villes anciennes,
+                            qui constituaient dans le passé une étape majeure sur la route des caravanes médiévales.
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <img src="../img/tourisme/0.jpg" style="">
+            </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <p>
+                           <b>La Mauritanie, qui est le point de rencontre du monde arabe et de l'Afrique subsaharienne,
+                            se distingue par son patrimoine culturel exceptionnel et la diversité des paysages;
+                            son vaste désert qui offre de grandes opportunités pour les aventures sportives,
+                            la chasse et la terre, son terrain montagneux, ses plages pittoresques, parcs et réserves naturelles,
+                            ainsi que les vallées et les oasis disséminées dans le désert mauritanien La diversité ethnique du pays est également un facteur de richesse,
+                            car les valeurs arabes authentiques embrassent les traditions africaines dans une harmonie unique.<br>
+                            On peut dire que le pays possède d'énormes qualifications touristiques qui offrent des <strong>opportunités d'investissement </strong>prometteuses telles que:
+                                les villes archéologiques classées au patrimoine humain par l'UNESCO (Chinguetti, Wadan, Tichet et Welatta),
+                                qui assistent à des festivals annuels qui sont devenus un pèlerinage pour un grand nombre de touristes,
+                                et des oasis de palmiers dans Les États d'Adrar, de Takant et d'Adaba, en plus d'une côte atlantique propre,
+                           </b>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                                <b>se distinguent par leur climat agréable, leurs paysages pittoresques et leurs réserves naturelles (Cap-Vert, bassin d'Argin et Diaoling),
+                                et le bassin d'argin comprend un archipel d'îles sur la côte atlantique (102 îles) sur une superficie de 12 mille kilomètres carrés,
+                                et c'est un lieu de prédilection pour des millions d'oiseaux et d'animaux migrateurs Bleu marine Il a été classé par l'UNESCO en 1989 comme patrimoine mondial.
+                                </b>
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Start portfolio Area -->
+<div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                    <h2>Sites touristiques</h2>
+                    <p>
+                        <b>Le pays possède de nombreux sites touristiques notamment dans la région de l'Adrar,
+                        on peut citer les villes de Aoudaghost, Chinguetti, Koumbi Saleh, Ksar El Barka,
+                        Ouadane, Oualata, Tichitt. On trouve également la structure de Richat près de Ouadane,
+                            l'oasis de Tergit ou encore les ruines médiévales de Ksar El Barka.</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Start Portfolio -page -->
+            <div class="awesome-project-content">
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design development">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Terjit/1%20(4).jpg" alt="" /></a>
+                            <div class="add-actions text-center">
+                                    <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Terjit/1%20(4).jpg">
+                                        <h4>Oasis Terjit</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 photo">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Wadan/1%20(1).jpg" alt="" /></a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Wadan/1%20(1).jpg">
+                                        <h4>Wadan</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Banc%20d'argin/1%20(1).jpg" alt="" /></a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Banc%20d'argin/1%20(1).jpg">
+                                        <h4>Banc d'argin</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Walata/1%20(1).jpg" alt="" /></a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Walata/1%20(1).jpg">
+                                        <h4>Walata</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 development">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Chinguiti/1%20(2).jpg" alt="" /></a>
+                            <div class="add-actions text-center text-center">
+                                <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Chinguiti/1%20(2).jpg">
+                                        <h4>Chinguiti</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+                <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a href="#"><img src="../img/tourisme/Ain%20sahra/1%20(1).jpg" alt="" /></a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <a class="venobox" data-gall="myGallery" href="../img/tourisme/Ain%20sahra/1%20(1).jpg">
+                                        <h4>Ain sahra</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-awesome-project end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- awesome-portfolio end -->
+
+
+<!-- Start Blog Area -->
+<div id="blog" class="blog-area">
+    <div class="blog-inner area-padding">
+        <div class="blog-overly"></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h2>Meilleurs 6 sites</h2>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Start Left Blog -->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px;">
+                <div class="col-md-6 col-sm-12 col-xs-12" >
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Banc%20d'argin/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Banc%20d'argin/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Banc%20d'argin/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Banc%20d'argin/1%20(4).jpg" alt="" style="width: 200px;height: 200px">
+                               </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="blog-text">
+                            <h4>
+                                <a href="blog.html">Banc d'argin</a>
+                            </h4>
+                            <p>
+                                Site inscrit au Patrimoine mondial de l’Unesco depuis 1989 et classé zone humide d’importance internationale à la convention de Ramsar, le Banc d’Arguin couvre une superficie de 12 000 km2 (dont 6 300 de domaine maritime) de part et d’autre du 20e parallèle. On y rencontre des paysages magnifiques (bancs de sable, dunes, vasières), une multitude d’espèces animales (plus de 280) et des herbiers marins. C’est une réserve qui abrite nombre d’oiseaux migrateurs venus de France, de Hollande ou même de Sibérie : mouettes, cormorans, goélands, hérons cendrés...
+                            </p>
+                        </div>
+
+                    </div>
+            </div>
+
+                <!-- End Left Blog-->
+                <!-- Start Left Blog -->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px;color: black">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Wadan/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Wadan/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Wadan/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Wadan/1%20(1).jpeg" alt="" style="width: 200px;height: 200px">
+                               </a>s
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="blog-text">
+                        <h4>
+                            <a href="blog.html">Wadan</a>
+                        </h4>
+                        <p>
+                            Ouadane, ou la ville au deux oueds, est une ancienne installation datant de 1140. Les siècles suivants, la ville fleurissait du commerce avec Tombouctou, et était connue pour ses palmeraies, ses mosquées et sa bibliothèque. Au 17e siècle, la ville fut visitée par les portugais qui y établirent des liens commerciaux à l'époque où la ville atteignait son apogée. Le déclin est cependant arrivé quand le commerce maritime européen s'est développé.
+
+                            L'UNESCO classifie le site comme une partie du patrimoine mondial de l'humanité. Perchée sur des rochers escarpés, la ville évoque le passé glorieux du Sahara. À l'intérieur de la ville, des sites comme la vieille mosquée, la plantation de palmes, la vieille ville, la structure de Richat, la météorite étudiée par Théodore Monod, El Beyedh ou encore le fort d'El Ghallaouya.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+                <!-- End Left Blog-->
+                <!-- Start Right Blog-->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px;color: black">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Walata/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Walata/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Walata/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Walata/1%20(1).jpeg" alt="" style="width: 200px;height: 200px">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="blog-text">
+                        <h4>
+                            <a href="blog.html">Welata</a>
+                        </h4>
+                        <p>
+                           Oualata, situé à 90 km au nord de la ville de Néma, est une vieille ville connue pour ses décorations murales. Les maisons sont peintes avec différents motifs. La ville s'est développé au 11e siècle. Elle était une ville caravane comme Ouadane, profitant du commerce avec Tombouctou pour se développer.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+<!-- End Blog -->
+
+            <!-- Start Right Blog-->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px;color: black">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Chinguiti/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Chinguiti/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Chinguiti/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Chinguiti/1%20(4).jpg" alt="" style="width: 200px;height: 200px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="blog-text">
+                        <h4>
+                            <a href="blog.html">Chinguetti</a>
+                        </h4>
+                        <p>
+                            La ville de Chinguetti est située à 86 km d'Atar, 128 km de Ouadane. Considérée comme la 7e ville sainte de l'islam, Chinguetti était un centre religieux et connu pour ces écoles coraniques. La ville a également joué un rôle commercial important durant l'ère du commerce par dromadaire. L'influence de la ville dépassait les frontières de l'actuelle Mauritanie, et les écoles étaient connues jusqu'en Orient. La Mauritanie était même connue à une époque comme la "Bilad Chenguetti", ce qui signifie la terre de Chenguetti, et eût son apogée pendant le 17e et 18e siècles.
+
+                            En 1980, la ville fut attaquée par le Front Polisario, ce qui a conduit la Mauritanie a se retirer du conflit.
+
+                            Aujourd'hui, la vieille partie au sud de la ville tombe en ruine et est enterrée sous les dunes, mais continue d'offrir un spectacle impressionnant pour le visiteur. De vieux bâtiments, comme la mosquée et son minaret datant du 13e siècle survivent toujours aujourd'hui dans la vieille ville. La bibliothèque de la ville contient des centaines de manuscrits médiévaux, détaillant entre autres transactions commerciales, lois coraniques et observations scientifiques.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Blog -->
+
+            <!-- Start Right Blog-->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px;color: black">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Tichit/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Tichit/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Tichit/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Tichit/1%20(4).jpg" alt="" style="width: 200px;height: 200px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="blog-text">
+                        <h4>
+                            <a href="blog.html">Tichit</a>
+                        </h4>
+                        <p>
+                           Tichitt est une ville isolée mais historique, située à 230 km à l'est de Tidjikdja et 490 km de Néma. L'histoire de la ville remonte au XIIe profitant également du commerce dans le Sahara pour se développer. La ville est connue pour sa bibliothèque et sa mosquée vieille de 700 ans. Du verre de Venise y a été retrouvé sous forme de perles, témoin du commerce médiéval. Les installations commerciales médiévales sont classées comme faisant partie du patrimoine mondial de l'humanité.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Blog -->
+
+            <!-- Start Right Blog-->
+            <div class="row" style="margin-bottom: 20px;border: rgba(122,122,122,0.29) solid 2px;padding: 10px ;color: black">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <a href="blog.html">
+                                <img src="../img/tourisme/Terjit/1%20(1).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Terjit/1%20(2).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Terjit/1%20(3).jpg" alt="" style="width: 200px;height: 200px">
+                                <img src="../img/tourisme/Terjit/1%20(4).jpg" alt="" style="width: 200px;height: 200px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="blog-text">
+                        <h4>
+                            <a href="blog.html">Terjit</a>
+                        </h4>
+                        <p>
+                            L'oasis de Terjit se trouve à 50 km d’Atar (1h de route) en direction d’Akjoujt. Un paradis insoupçonné : à l’ombre d’une faille dans le plateau, l’eau suinte le long des parois rocheuses pour créer au sol des réservoirs naturels. L’eau est fraîche et excellente à boire. Un site extraordinaire qui vaut le voyage.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Blog -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-area-bottom" style="background-color: rgb(0,0,0)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright text-center" >
+                            <p style="color: #f0f0f0;">
+                                &copy; Copyright <strong>MaurInvest</strong>. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="../lib/venobox/venobox.min.js"></script>
+<script src="../lib/knob/jquery.knob.js"></script>
+<script src="../lib/wow/wow.min.js"></script>
+<script src="../lib/parallax/parallax.js"></script>
+<script src="../lib/easing/easing.min.js"></script>
+<script src="../lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="../lib/appear/jquery.appear.js"></script>
+<script src="../lib/isotope/isotope.pkgd.min.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="../contactform/contactform.js"></script>
+
+<script src="../js/main.js"></script>
+<script src="../js/js2.js"></script>
+</body>
+
+</html>
